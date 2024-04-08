@@ -12,7 +12,7 @@ import {
   deleteRecord,
   updateRecord,
   getRecordById,
-} from "@/utils/db"; // Removed an extra slash
+} from "@/utils/db"; 
 import "./Home.css";
 
 const Detail = () => {
@@ -76,7 +76,7 @@ const Detail = () => {
   };
 
   const updatePosition = () => {
-    getPosition(); // 调用获取位置信息的函数
+    getPosition(); 
   };
 
   const onBack = () => {
@@ -92,7 +92,6 @@ const Detail = () => {
     console.log(values);
     const fn = id ? updateRecord : addRecord;
     await fn(values);
-    // 加在这里
     onBack();
   };
 
@@ -139,7 +138,7 @@ const Detail = () => {
               style={{ marginTop: "10px" }}
               block
               color="danger"
-              size="large" // 设置Delete按钮的大小为"large"
+              size="large" 
             >
               Delete
             </Button>
